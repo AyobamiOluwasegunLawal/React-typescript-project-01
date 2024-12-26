@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('./assets/fonts/Quicksand-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'QuicksandBold';
+    src: url('./assets/fonts/Quicksand-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'QuicksandSemibold';
+    src: url('./assets/fonts/Quicksand-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* SemiBold */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'QuicksandMedium';
+    src: url('./assets/fonts/Quicksand-Medium.ttf') format('truetype');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'QuicksandLight';
+    src: url('./assets/fonts/Quicksand-Light.ttf') format('truetype');
+    font-weight: 300; /* Light */
+    font-style: normal;
+  }
+  
+
+
+@Layer components{
+    .container{
+        @apply min-w-full h-screen bg-purple-900 font-quicksand
+    }
+}
